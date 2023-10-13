@@ -1,0 +1,17 @@
+
+@import "active_admin/mixins";
+@import "active_admin/base";
+$skinLogo: none;
+@import "active_skin";
+@import 'activeadmin/quill_editor/quill.snow';
+@import 'activeadmin/quill_editor_input';
+
+
+.note-body{
+	padding: 1em;
+	margin: 1em;
+	background-color: #e6e6e6;
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.29);
+}

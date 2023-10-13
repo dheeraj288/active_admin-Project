@@ -1,0 +1,18 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  username: dheeraj_pg
+  password: djkr2525
+
+development:
+  <<: *default
+  database: active_demo_development
+
+test:
+  <<: *default
+  database: active_demo_test
+
