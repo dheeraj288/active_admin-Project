@@ -1,7 +1,7 @@
 ActiveAdmin.register Subject do
   permit_params :name, notes_ids: []
   show title: "My title" do
-    h3 'you have' + pluralize(subject.notes.count, 'note') + 'for this subject'
+    h3 'you have ' + pluralize(subject.notes.count, 'note') + ' for this subject'
     subject.notes.each do |note|
        div do
         h1 note.title
